@@ -137,7 +137,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding-top: 110px; /* Matches navbar height */
+    padding: 110px 0 40px; /* Matches navbar height + bottom padding */
     box-sizing: border-box;
 }
 
@@ -173,6 +173,7 @@ body {
     gap: 3rem;
     align-items: center;
     padding: 2rem 0;
+    min-height: calc(100vh - 150px); /* Ensure content fits viewport */
 }
 
 .hero-title {
@@ -250,6 +251,8 @@ body {
     gap: 1rem;
     opacity: 0;
     animation: fadeInUp 0.8s ease 1s forwards;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .btn {

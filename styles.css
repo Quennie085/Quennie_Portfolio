@@ -129,7 +129,7 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     background: var(--gradient-hero);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
@@ -137,9 +137,10 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    padding: 110px 0 40px; /* Matches navbar height + bottom padding */
+    padding: 110px 0 60px; /* Matches navbar height + increased bottom padding */
     box-sizing: border-box;
     z-index: 5;
+    margin-bottom: 20px; /* Extra space before about section */
 }
 
 @keyframes gradientShift {
@@ -404,8 +405,8 @@ section {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     position: relative;
     z-index: 10;
-    margin-top: -40px; /* Compensate for hero padding */
-    padding-top: 60px; /* Add extra top padding */
+    margin-top: 0;
+    padding-top: 40px;
 }
 
 .about[draggable="true"] {
